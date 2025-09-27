@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('assets/Luke__Blossom_Encounters__Evolve_2.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.event{
+    /* height: 20vh;
+    width: 10vw; */
+    margin-top: 150px;
+}
+.tasks{
+    height: 20vh;
+    width: 10vw;
+    margin-top: 50px;
+}
