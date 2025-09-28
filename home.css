@@ -4,19 +4,81 @@ html, body {
     padding: 0;
 }
 
-body {
-    background-image: url('assets/Luke__Blossom_Encounters__Evolve_2.png');
-    background-repeat: no-repeat;
-    background-size:cover;
+#luke{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
-.event{
-    /* height: 20vh;
-    width: 10vw; */
-    margin-top: 150px;
+.profile{
+    position: absolute;
+    top: 5px; 
+    left: 0px;
+    z-index: 3;
 }
-.tasks{
-    height: 20vh;
-    width: 10vw;
-    margin-top: 50px;
+
+.pfp{
+    position: absolute;
+    top: 10px; 
+    left: 0px;
+    z-index: 4;
+}
+
+.level{
+    position: absolute;
+    top: 5px; 
+    left: 0px;
+    z-index: 5;
+}
+
+.money{
+    position: absolute;
+    top: 5px; 
+    left: 120px;
+    z-index: 1;
+}
+
+.gems{
+    position: absolute;
+    top: 16px; 
+    left: 260px;
+    z-index: 2;
+}
+
+.schips{
+    position: absolute;
+    top: 16px; 
+    left: 500px;
+    z-index: 2;
+}
+
+.stellin{
+    position: absolute;
+    top: 16px; 
+    left: 750px;
+    z-index: 2;
+}
+
+.mall{
+    position: absolute;
+    top: 5px;
+    left: 970px;
+    z-index: 2;
+}
+
+.PB{
+    position: absolute;
+    top: 5px;
+    left: 1070px;
+    z-index: 2;
+}
+
+.more{
+    position: absolute;
+    top: 5px;
+    left: 1350px;
+    z-index: 2;
 }
