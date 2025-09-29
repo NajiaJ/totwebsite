@@ -11,3 +11,31 @@ html, body {
     left: 5px;
     z-index: 0;
 }
+
+.invitation{
+    position: absolute;
+    top: 210px;
+    left: 1275px;
+    z-index: 0;
+}
+
+.share{
+    position: absolute;
+    top: 620px;
+    left: 40px;
+    z-index: 0;
+}
+
+.hoyo{
+    position: absolute;
+    top: 620px;
+    left: 150px;
+    z-index: 0;
+}
+
+.uid{
+    position: absolute;
+    top: 620px;
+    left: 1000px;
+    z-index: 0;
+}
