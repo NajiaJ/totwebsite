@@ -9,9 +9,13 @@
 </head>
 
 <body>
-    <video autoplay muted loop id="luke">
+    <!-- <video autoplay muted loop id="luke">
         <source src="https://tot.wiki/images/4/4e/Luke_%22Blossom_Encounters%22_Evolve_2.webm" type="video/webm">
+    </video> -->
+    <video autoplay muted loop id="luke">
+        <source id="lukeSource" src="default/video/url/here.webm" type="video/webm">
     </video>
+
     <a href="profile.html">
         <img src="assets/Profile Bar_.png" class="profile" width="250" height="100">
         <img src="assets/Level.png" class="level" height="99">
@@ -34,6 +38,21 @@
     <a href=""> <img src="assets/SCHED.png" class="schedule" height="140"> </a>
     <a href=""> <img src="assets/Story.png" class="story" height="400"> </a>
     <a href=""> <img src="assets/Battery.png" class="battery" height="130"> </a>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          const savedVideo = localStorage.getItem("selectedVideo");
+          const video = document.getElementById("luke");
+          const source = document.getElementById("lukeSource");
+      
+          if (savedVideo) {
+            source.src = savedVideo;
+            video.load();
+            video.play();
+          }
+        });
+      </script>
+      
 </body>
 
 </html>

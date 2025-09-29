@@ -1,0 +1,41 @@
+{
+    "characters": [
+      {
+        "id": "member1",
+        "name": "Luke",
+        "image": "assets/Luke.png",
+        "cards": [
+          {
+            "id": "card1",
+            "title": "Light of Life and Love",
+            "video": "https://tot.wiki/images/1/1b/Luke_%22Light_of_Life_and_Love%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Luke_%22Light_of_Life_and_Love%22_Evolve_2.png&width=1200"
+          },
+          {
+            "id": "card2",
+            "title": "Blossom Encounters",
+            "video": "https://tot.wiki/images/4/4e/Luke_%22Blossom_Encounters%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Luke_%22Blossom_Encounters%22_Evolve_2.png&width=1200"
+          },
+          {
+            "id": "card3",
+            "title": "Under the Milky Way",
+            "video": "https://tot.wiki/images/2/20/Luke_%22Under_the_Milky_Way%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Luke_%22Under_the_Milky_Way%22_Evolve_2.jpg&width=1200"
+          },
+          {
+            "id": "card4",
+            "title": "Orange Scent",
+            "video": "https://tot.wiki/images/f/fe/Luke_%22Orange_Scent%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Luke_%22Orange_Scent%22_Evolve_2.jpg&width=1200"
+          },
+          {
+            "id": "card5",
+            "title": "The Answered Heart",
+            "video": "https://tot.wiki/images/f/f7/Luke_%22The_Answered_Heart%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Luke_%22The_Answered_Heart%22_Evolve_2.png&width=1200"
+          }
+        ]
+      }
+    ]
+  }

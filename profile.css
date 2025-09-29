@@ -39,3 +39,31 @@ html, body {
     left: 1000px;
     z-index: 0;
 }
+
+.hidden {
+    display: none;
+  }
+  
+  #characterSelect, #cardSelect {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #characterSelect div, #cardSelect div {
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  #characterSelect img, #cardSelect img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  #characterSelect img:hover, #cardSelect img:hover {
+    transform: scale(1.05);
+  }  
