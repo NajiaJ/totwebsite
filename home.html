@@ -9,12 +9,16 @@
 </head>
 
 <body>
-    <!-- <video autoplay muted loop id="luke">
-        <source src="https://tot.wiki/images/4/4e/Luke_%22Blossom_Encounters%22_Evolve_2.webm" type="video/webm">
-    </video> -->
     <video autoplay muted loop id="luke">
         <source id="lukeSource" src="default/video/url/here.webm" type="video/webm">
     </video>
+
+    <div id="cardInfo" class="card-info">
+      <h2 id="characterName"></h2>
+      <h3 id="cardTitle"></h3>
+      <img id="characterImage" alt="Character Image" width="150">
+      <img id="thumbnail" alt="Card Thumbnail" width="300">
+    </div>
 
     <a href="profile.html">
         <img src="assets/Profile Bar_.png" class="profile" width="250" height="100">
@@ -40,16 +44,29 @@
     <a href=""> <img src="assets/Battery.png" class="battery" height="130"> </a>
 
     <script>
-        window.addEventListener("DOMContentLoaded", () => {
-          const savedVideo = localStorage.getItem("selectedVideo");
-          const video = document.getElementById("luke");
-          const source = document.getElementById("lukeSource");
-      
-          if (savedVideo) {
-            source.src = savedVideo;
-            video.load();
-            video.play();
-          }
+        document.addEventListener("DOMContentLoaded", () => {
+        const cardDataJSON = localStorage.getItem("selectedCardData");
+
+        if (!cardDataJSON) {
+          console.error("No video data found in localStorage.");
+          return;
+        }
+
+        const data = JSON.parse(cardDataJSON);
+
+        // Show video
+        const videoElement = document.getElementById("luke"); // Consider renaming this to something more general like "cardVideo"
+        const sourceElement = videoElement.querySelector("source");
+
+        sourceElement.src = data.video;
+        videoElement.load();
+        videoElement.play();
+
+        // Optionally show character and card info
+        document.getElementById("characterName").textContent = data.characterName;
+        document.getElementById("cardTitle").textContent = data.title;
+        document.getElementById("thumbnail").src = data.thumbnail;
+        document.getElementById("characterImage").src = data.characterImage;
         });
       </script>
       

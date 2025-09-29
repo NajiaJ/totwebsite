@@ -50,24 +50,20 @@ function showCards(character) {
       <p>${card.title}</p>
     `;
     cardDiv.addEventListener("click", () => {
-      showVideoOnFrontPage(card.video);
+      showVideoOnFrontPage(card, character);
     });
     cardContainer.appendChild(cardDiv);
   });
 }
 
-function showVideoOnFrontPage(videoSrc) {
-  const videoElement = document.getElementById("luke");
-  const sourceElement = videoElement.querySelector("source");
+function showVideoOnFrontPage(card, character) {
+  localStorage.setItem("selectedCardData", JSON.stringify({
+    video: card.video,
+    thumbnail: card.thumbnail,
+    title: card.title,
+    characterName: character.name,
+    characterImage: character.image
+  }));
 
-  sourceElement.src = videoSrc;
-  videoElement.load();
-  videoElement.play();
+  window.location.href = "home.html";
 }
-
-function showVideoOnFrontPage(videoSrc) {
-    localStorage.setItem("selectedVideo", videoSrc);
-
-    window.location.href = "home.html";
-  }
-  

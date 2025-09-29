@@ -36,6 +36,117 @@
             "thumbnail": "https://tot.wiki/thumb.php?f=Luke_%22The_Answered_Heart%22_Evolve_2.png&width=1200"
           }
         ]
+      },
+      {
+        "id": "member2",
+        "name": "Artem",
+        "image": "assets/Artem.png",
+        "cards": [
+          {
+            "id": "card6",
+            "title": "Confluence of Romance",
+            "video": "https://tot.wiki/images/5/54/Artem_%22Confluence_of_Romance%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Artem_%22Confluence_of_Romance%22_Evolve_2.png&width=1200"
+          },
+          {
+            "id": "card7",
+            "title": "Per Aspera Ad Astra",
+            "video": "https://tot.wiki/images/d/d1/Artem_%22Per_Aspera_Ad_Astra%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Artem_%22Per_Aspera_Ad_Astra%22_Evolve_2.png&width=1200"
+          },
+          {
+            "id": "card8",
+            "title": "Eternal Yearning",
+            "video": "https://tot.wiki/images/6/6f/Artem_%22Eternal_Yearning%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Artem_%22Eternal_Yearning%22_Evolve_2.jpg&width=1200"
+          },
+          {
+            "id": "card9",
+            "title": "Lavish Invitation",
+            "video": "https://tot.wiki/images/2/29/Artem_%22Lavish_Invitation%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Artem_%22Lavish_Invitation%22_Evolve_2.jpg&width=1200"
+          },
+          {
+            "id": "card10",
+            "title": "Resonant Heartstrings",
+            "video": "https://tot.wiki/images/8/85/Artem_%22Resonant_Heartstrings%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Artem_%22Resonant_Heartstrings%22_Evolve_2.png&width=1200"
+          }
+        ]
+      },
+      {
+        "id": "member3",
+        "name": "Vyn",
+        "image": "assets/Vyn.png",
+        "cards": [
+          {
+            "id": "card11",
+            "title": "Duet for the Ages",
+            "video": "https://tot.wiki/images/1/15/Vyn_%22Duet_for_the_Ages%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Vyn_%22Duet_for_the_Ages%22_Evolve_2.png&width=1200"
+          },
+          {
+            "id": "card12",
+            "title": "Missing You",
+            "video": "https://tot.wiki/images/9/99/Vyn_%22Missing_You%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Vyn_%22Missing_You%22_Evolve_2.png&width=1200"
+          },
+          {
+            "id": "card13",
+            "title": "Committed",
+            "video": "https://tot.wiki/images/f/fe/Vyn_%22Committed%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Vyn_%22Committed%22_Evolve_2.jpg&width=1200"
+          },
+          {
+            "id": "card14",
+            "title": "Drowning in the Ashes",
+            "video": "https://tot.wiki/images/9/97/Vyn_%22Drowning_in_the_Ashes%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Vyn_%22Drowning_in_the_Ashes%22_Evolve_2.jpg&width=1200"
+          },
+          {
+            "id": "card15",
+            "title": "Journey Forth With You",
+            "video": "https://tot.wiki/images/3/3f/Vyn_%22Journey_Forth_With_You%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Vyn_%22Journey_Forth_With_You%22_Evolve_2.png&width=1200"
+          }
+        ]
+      },
+      {
+        "id": "member4",
+        "name": "Marius",
+        "image": "assets/Marius.png",
+        "cards": [
+          {
+            "id": "card16",
+            "title": "Dreams in Synchronicity",
+            "video": "https://tot.wiki/images/c/c3/Marius_%22Dreams_in_Synchronicity%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Marius_%22Dreams_in_Synchronicity%22_Evolve_2.png&width=1200"
+          },
+          {
+            "id": "card17",
+            "title": "Mutual Yearning",
+            "video": "https://tot.wiki/images/e/e1/Marius_%22Mutual_Yearning%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Marius_%22Mutual_Yearning%22_Evolve_2.png&width=1200"
+          },
+          {
+            "id": "card18",
+            "title": "Expression Through Art",
+            "video": "https://tot.wiki/images/b/b9/Marius_%22Expression_Through_Art%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Marius_%22Expression_Through_Art%22_Evolve_2.jpg&width=1200"
+          },
+          {
+            "id": "card19",
+            "title": "World of Glitz",
+            "video": "https://tot.wiki/images/4/49/Marius_%22World_of_Glitz%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Marius_%22World_of_Glitz%22_Evolve_2.jpg&width=1200"
+          },
+          {
+            "id": "card20",
+            "title": "Vow of Embers",
+            "video": "https://tot.wiki/images/5/53/Marius_%22Vow_of_Embers%22_Evolve_2.webm",
+            "thumbnail": "https://tot.wiki/thumb.php?f=Marius_%22Vow_of_Embers%22_Evolve_2.png&width=1200"
+          }
+        ]
       }
     ]
   }
