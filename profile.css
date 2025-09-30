@@ -41,8 +41,8 @@ html, body {
 }
 
 .hidden {
-    display: none;
-  }
+  display: none !important;
+}
   
   #characterSelect, #cardSelect {
     display: flex;

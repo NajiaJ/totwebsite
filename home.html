@@ -10,15 +10,8 @@
 
 <body>
     <video autoplay muted loop id="luke">
-        <source id="lukeSource" src="default/video/url/here.webm" type="video/webm">
+        <source src="https://tot.wiki/images/4/4e/Luke_%22Blossom_Encounters%22_Evolve_2.webm" type="video/webm">
     </video>
-
-    <div id="cardInfo" class="card-info">
-      <h2 id="characterName"></h2>
-      <h3 id="cardTitle"></h3>
-      <img id="characterImage" alt="Character Image" width="150">
-      <img id="thumbnail" alt="Card Thumbnail" width="300">
-    </div>
 
     <a href="profile.html">
         <img src="assets/Profile Bar_.png" class="profile" width="250" height="100">
@@ -44,32 +37,43 @@
     <a href=""> <img src="assets/Battery.png" class="battery" height="130"> </a>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-        const cardDataJSON = localStorage.getItem("selectedCardData");
+      window.addEventListener('DOMContentLoaded', () => {
+  fetch('characters.json')
+    .then(response => response.json())
+    .then(data => {
+      const selectedCharId = localStorage.getItem('selectedCharacter') || 'member1';  // default to Luke
+      const selectedCardId = localStorage.getItem('selectedCard');
 
-        if (!cardDataJSON) {
-          console.error("No video data found in localStorage.");
-          return;
-        }
+      const character = data.characters.find(c => c.id === selectedCharId);
 
-        const data = JSON.parse(cardDataJSON);
+      if (!character) {
+        console.warn('Character not found');
+        return;
+      }
 
-        // Show video
-        const videoElement = document.getElementById("luke"); // Consider renaming this to something more general like "cardVideo"
-        const sourceElement = videoElement.querySelector("source");
+      let card = character.cards[0]; // default first card
 
-        sourceElement.src = data.video;
-        videoElement.load();
-        videoElement.play();
+      if (selectedCardId) {
+        const foundCard = character.cards.find(c => c.id === selectedCardId);
+        if (foundCard) card = foundCard;
+      }
 
-        // Optionally show character and card info
-        document.getElementById("characterName").textContent = data.characterName;
-        document.getElementById("cardTitle").textContent = data.title;
-        document.getElementById("thumbnail").src = data.thumbnail;
-        document.getElementById("characterImage").src = data.characterImage;
-        });
-      </script>
-      
+      // Update video source
+      const videoElement = document.getElementById('luke');
+      videoElement.src = card.video;
+      videoElement.load();
+      videoElement.play();
+
+      // Optional: update UI card info
+      document.getElementById('characterName').textContent = character.name;
+      document.getElementById('cardTitle').textContent = card.title;
+      document.getElementById('characterImage').src = character.image;
+      document.getElementById('thumbnail').src = card.thumbnail;
+    })
+    .catch(err => console.error('Error loading characters.json:', err));
+});
+
+    </script>
 </body>
 
 </html>
