@@ -152,3 +152,38 @@ html, body {
     left: 1280px;
     z-index: 2;
 }
+
+.alert{
+    position: absolute;
+    top: 240px;
+    left: 1255px;
+    z-index: 1000;
+}
+
+.alert2{
+    position: absolute;
+    top: 125px;
+    left: 100px;
+    z-index: 1000;
+}
+
+.alert3{
+    position: absolute;
+    top: 480px;
+    left: 240px;
+    z-index: 1000;
+}
+
+.alert4{
+    position: absolute;
+    top: 490px;
+    left: 740px;
+    z-index: 1000;
+}
+
+.alert5{
+    position: absolute;
+    top: 480px;
+    left: 910px;
+    z-index: 1000;
+}
