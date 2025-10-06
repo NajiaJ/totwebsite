@@ -84,11 +84,28 @@ html, body {
   }
   
   #characterSelect img, #cardSelect img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.2s ease;
   }
+
+  #characterSelect {
+    display: flex;
+    justify-content: center;    /* center horizontally */
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;          /* prevent wrapping */
+    position: absolute;
+    top: 75px;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: aliceblue;
+    max-width: 90vw;            /* optional: limit width to viewport */
+  }
+  
+  
   
   #characterSelect img:hover, #cardSelect img:hover {
     transform: scale(1.05);

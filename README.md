@@ -15,7 +15,7 @@ This website was designed to replicate the homepage and profile page of the orig
 - Git/Github (Version Control)
 - VSCode
 - Figma (UI Mockups)
-    - Insert link to mockup
+    - https://www.figma.com/design/gdNfCKMoAKszAp0zd174Yt/Tears-of-Themis?node-id=0-1&t=jwdYUa33aYHWmX3m-1
 
 ## License & Others
 

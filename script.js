@@ -8,7 +8,7 @@ fetch('characters.json')
     // Populate characterSelect with character cards (hidden initially)
     data.characters.forEach(character => {
       const charDiv = document.createElement('div');
-      charDiv.innerHTML = `<img src="${character.image}" alt="${character.name}" data-charid="${character.id}" style="width:100px;cursor:pointer"><p>${character.name}</p>`;
+      charDiv.innerHTML = `<img src="${character.image}" alt="${character.name}" data-charid="${character.id}"><p>${character.name}</p>`;
       characterSelect.appendChild(charDiv);
     });
 
